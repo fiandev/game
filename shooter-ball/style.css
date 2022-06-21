@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  cursor: none;
+  user-select: none;
+}
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+.scoreboard {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: none;
+  display: none;
+  /*margin-top: -50px;z/
+ /* background-color: #fff;*/
+}
+.game-over h1 {
+  display: none;
+}
+.score, #score {
+  font-size: 1.5rem;
+  color: #fff;
+  display: inline-block;
+}
+#canvas {
+  position: relative;
+  z-index: 1;
+}
+
+.popUp {
+  background-color: #fff;
+  position: absolute;
+  z-index: 3;
+  opacity: 1;
+  width: 60%;
+  padding: 25px 10px;
+  text-align: center;
+}
+.popUp h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  
+}
+.game-over-popUp {
+  background-color: #fff;
+  position: absolute;
+  z-index: 3;
+  opacity: .9;
+  padding: 30px 20px;
+}
+.popUp p,.game-over-popUp p{
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.popUp button, .game-over-popUp button {
+  padding: 10px;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+.popUp button {
+  width: 100%;
+  background-color: skyblue;
+  padding: 10px;
+}
+.popUp button#no {
+  background-color: red;
+}
+.popUp button#yes {
+  background-color: green;
+}
